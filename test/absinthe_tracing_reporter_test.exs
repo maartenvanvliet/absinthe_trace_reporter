@@ -1,0 +1,2 @@
+defmodule AbsintheTraceReporterTest do
+end
