@@ -1,4 +1,7 @@
 # WIP do not use in production
+
+[![Build Status](https://travis-ci.com/maartenvanvliet/absinthe_trace_reporter.svg?branch=master)](https://travis-ci.com/maartenvanvliet/absinthe_trace_reporter) [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
 # AbsintheTracingReporter
 
 Apollo Engine reporter that sends Absinthe traces built by https://github.com/sikanhe/apollo-tracing-elixir to Apollo engine directly without having to use a the (deprecated) engine proxy. 
