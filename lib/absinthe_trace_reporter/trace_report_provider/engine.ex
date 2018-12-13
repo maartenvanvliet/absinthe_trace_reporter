@@ -5,11 +5,11 @@ defmodule AbsintheTraceReporter.TraceProvider.Engine do
     %Mdg.Engine.Proto.FullTracesReport{
       header: %Mdg.Engine.Proto.ReportHeader{
         agent_version: "apollo-engine-reporting@0.0.2",
-        hostname: "",
+        hostname: "engine.local",
         runtime_version: runtime_version(),
         service: "",
         service_version: "",
-        uname: ""
+        uname: "darwin, Darwin, 17.7.0, x64)"
       },
       traces_per_query: build_traces_per_query(tracing)
     }
@@ -122,7 +122,6 @@ defmodule AbsintheTraceReporter.TraceProvider.Engine do
           _ -> {:child, child}
         end
       end)
-      |> IO.inspect(label: "childnodes")
 
     child_nodes =
       children

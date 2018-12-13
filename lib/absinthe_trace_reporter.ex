@@ -7,10 +7,10 @@ defmodule AbsintheTraceReporter do
     import Supervisor.Spec
     # List all child processes to be supervised
     children = [
-      # Starts a worker by calling: ApqExample.Worker.start_link(arg)
+      # Starts a worker by calling: Example.Worker.start_link(arg)
       Plug.Adapters.Cowboy2.child_spec(
         scheme: :http,
-        plug: ApqExample.Router,
+        plug: Example.Router,
         options: [port: 4001]
       ),
       supervisor(AbsintheTraceReporter, [])
@@ -18,7 +18,7 @@ defmodule AbsintheTraceReporter do
 
     # See https://hexdocs.pm/elixir/Supervisor.html
     # for other strategies and supported options
-    opts = [strategy: :one_for_one, name: ApqExample.Supervisor]
+    opts = [strategy: :one_for_one, name: Example.Supervisor]
     Supervisor.start_link(children, opts)
 
   end

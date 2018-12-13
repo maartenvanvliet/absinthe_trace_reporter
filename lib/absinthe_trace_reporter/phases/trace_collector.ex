@@ -4,7 +4,6 @@ defmodule AbsintheTraceReporter.Phases.TraceCollector do
   def run(bp, _options \\ [])
 
   def run(bp, _options) do
-
     case bp do
       %{execution: %{acc: %{apollo_tracing: trace}}, operations: operations} ->
         signature = AbsintheTraceReporter.Signature.build(operations)
@@ -19,7 +18,6 @@ defmodule AbsintheTraceReporter.Phases.TraceCollector do
         {:ok, bp}
     end
   end
-
 
   defp from_context(%{execution: %{context: %{trace_info: info}}}) do
     info
