@@ -7,10 +7,6 @@
 Apollo Engine reporter that sends Absinthe traces built by https://github.com/sikanhe/apollo-tracing-elixir to Apollo engine directly without having to use a the (deprecated) engine proxy. 
 
 # TODO
- - [ ] Make api key configurable
- - [ ] Make end point configurable
- - [ ] Make reporting interval configurable
- - [ ] Make max reports configurable
  - [ ] Add failing tests for tracing information by (https://github.com/sikanhe/apollo-tracing-elixir) to being converted to correct Engine trace reports
  - [ ] Fix converting tracing information to correct Engine trace reports
 ## Installation
