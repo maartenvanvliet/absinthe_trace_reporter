@@ -31,7 +31,7 @@ defmodule AbsintheTraceReporter.MixProject do
       # Protocol buffers
       {:protobuf, "~> 0.5.3"},
       {:google_protos, "~> 0.1"},
-      {:tesla, "~> 1.0.0"}
+      {:tesla, "~> 1.2.1"}
     ]
   end
 end
