@@ -29,7 +29,7 @@ defmodule AbsintheTraceReporter.MixProject do
       {:absinthe_plug, "~> 1.4.5"},
       {:absinthe, "~> 1.4.0"},
       # Protocol buffers
-      {:protobuf, "~> 0.6.2"},
+      {:protobuf, "~> 0.11.0"},
       {:google_protos, "~> 0.1"},
       {:tesla, "~> 1.3.0"}
     ]
